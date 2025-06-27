@@ -5,13 +5,13 @@ Thank you for your interest in contributing to the Headless TODO API! This docum
 ## 🤝 How to Contribute
 
 ### Reporting Bugs
-- Use the [GitHub Issues](https://github.com/RushitSolanki/todo-api-dotnet/issues) page
+- Use the [GitHub Issues](https://github.com/RushitSolanki/headless-todo-api/issues) page
 - Include detailed steps to reproduce the bug
 - Provide error messages and stack traces
 - Mention your environment (OS, .NET version, etc.)
 
 ### Suggesting Features
-- Use the [GitHub Discussions](https://github.com/RushitSolanki/todo-api-dotnet/discussions) page
+- Use the [GitHub Discussions](https://github.com/RushitSolanki/headless-todo-api/discussions) page
 - Describe the feature and its benefits
 - Consider implementation complexity
 - Check if it aligns with project goals
@@ -59,8 +59,8 @@ TodoApp/
 
 ## 🚀 Getting Started
 
-1. Clone your fork: `git clone https://github.com/RushitSolanki/todo-api-dotnet.git`
-2. Add upstream: `git remote add upstream https://github.com/ORIGINAL_USERNAME/todo-api-dotnet.git`
+1. Clone your fork: `git clone https://github.com/RushitSolanki/headless-todo-api.git`
+2. Add upstream: `git remote add upstream https://github.com/ORIGINAL_USERNAME/headless-todo-api.git`
 3. Install dependencies: `dotnet restore`
 4. Set up database: `docker-compose up -d postgres redis`
 5. Run migrations: `dotnet ef database update --project TodoApp.Infrastructure --startup-project TodoApp.API`
@@ -101,7 +101,7 @@ When suggesting features:
 
 ## 📞 Questions?
 
-- **Issues**: [GitHub Issues](https://github.com/RushitSolanki/todo-api-dotnet/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/RushitSolanki/todo-api-dotnet/discussions)
+- **Issues**: [GitHub Issues](https://github.com/RushitSolanki/headless-todo-api/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/RushitSolanki/headless-todo-api/discussions)
 
 Thank you for contributing! 🎉
