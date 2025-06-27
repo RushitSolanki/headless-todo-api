@@ -41,8 +41,8 @@ A production-ready headless TODO API built with **ASP.NET Core 8**, **PostgreSQL
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/RushitSolanki/todo-api-dotnet.git
-cd todo-api-dotnet
+git clone https://github.com/RushitSolanki/headless-todo-api.git
+cd headless-todo-api
 ```
 
 ### 2. Start with Docker (Recommended)
@@ -257,8 +257,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/RushitSolanki/todo-api-dotnet/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/RushitSolanki/todo-api-dotnet/discussions)
+- **Issues**: [GitHub Issues](https://github.com/RushitSolanki/headless-todo-api/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/RushitSolanki/headless-todo-api/discussions)
 
 ---
 
