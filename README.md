@@ -91,14 +91,7 @@ http://localhost:5235/api/v1
 
 #### Create a TODO
 ```bash
-curl -X POST http://localhost:5235/api/v1/todos \
-  -H "Content-Type: application/json" \
-  -d '{
-    "title": "Complete API Documentation",
-    "description": "Write comprehensive API docs",
-    "priority": 1,
-    "userId": "12345678-1234-1234-1234-123456789012"
-  }'
+curl -X POST http://localhost:5235/api/v1/todos -H "Content-Type: application/json" -d '{"title":"Complete API Documentation","description":"Write comprehensive API docs","priority":1,"userId":"12345678-1234-1234-1234-123456789012"}'
 ```
 
 #### Get All TODOs
