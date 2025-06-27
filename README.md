@@ -46,15 +46,22 @@ cd headless-todo-api
 ```
 
 ### 2. Start with Docker (Recommended)
-```bash
-# Start PostgreSQL and Redis containers
-docker-compose up -d postgres redis
 
-# Run database migrations
+You can run each step individually:
+
+**Start PostgreSQL and Redis containers:**
+```bash
+docker-compose up -d postgres redis
+```
+
+**Run database migrations:**
+```bash
 cd TodoApp.API
 dotnet ef database update
+```
 
-# Start the API
+**Start the API:**
+```bash
 dotnet run
 ```
 
