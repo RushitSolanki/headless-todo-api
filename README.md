@@ -91,71 +91,57 @@ http://localhost:5235/api/v1
 
 #### Create a TODO
 
-**Option 1: Using JSON File (Recommended - Cross-platform)**
-```bash
-# Create a JSON file with the TODO data
-echo '{"title":"Complete API Documentation","description":"Write comprehensive API docs","priority":1,"userId":"12345678-1234-1234-1234-123456789012"}' > todo.json
-
-# Use the JSON file (works on Windows, macOS, and Linux)
-curl -X POST http://localhost:5235/api/v1/todos -H "Content-Type: application/json" -d @todo.json
-```
-
-**Option 2: Platform-specific Commands**
-
-*Windows (Command Prompt):*
-```cmd
-curl -X POST http://localhost:5235/api/v1/todos -H "Content-Type: application/json" -d "{\"title\":\"Complete API Documentation\",\"description\":\"Write comprehensive API docs\",\"priority\":1,\"userId\":\"12345678-1234-1234-1234-123456789012\"}"
-```
-
-*macOS/Linux (Bash):*
-```bash
-curl -X POST http://localhost:5235/api/v1/todos -H "Content-Type: application/json" -d '{"title":"Complete API Documentation","description":"Write comprehensive API docs","priority":1,"userId":"12345678-1234-1234-1234-123456789012"}'
-```
-
-**Option 3: Using PowerShell (Cross-platform)**
-```powershell
-$body = @{
-    title = "Complete API Documentation"
-    description = "Write comprehensive API docs"
-    priority = 1
-    userId = "12345678-1234-1234-1234-123456789012"
-} | ConvertTo-Json
-
-Invoke-RestMethod -Uri "http://localhost:5235/api/v1/todos" -Method POST -Body $body -ContentType "application/json"
-```
-
-**Option 4: Using Swagger UI (Easiest)**
+**Using Swagger UI (Recommended)**
 1. Open your browser and go to: http://localhost:5235/swagger
 2. Find the POST `/api/v1/todos` endpoint
 3. Click "Try it out"
-4. Enter the JSON data in the request body
+4. Enter the JSON data in the request body:
+```json
+{
+  "title": "Complete API Documentation",
+  "description": "Write comprehensive API docs",
+  "priority": 1,
+  "userId": "12345678-1234-1234-1234-123456789012"
+}
+```
 5. Click "Execute"
 
 #### Get All TODOs
-```bash
-curl http://localhost:5235/api/v1/todos
-```
+1. Open your browser and go to: http://localhost:5235/swagger
+2. Find the GET `/api/v1/todos` endpoint
+3. Click "Try it out"
+4. Click "Execute"
 
 #### Get TODO by ID
-```bash
-# Replace {id} with the actual TODO ID
-curl http://localhost:5235/api/v1/todos/{id}
-```
+1. Open your browser and go to: http://localhost:5235/swagger
+2. Find the GET `/api/v1/todos/{id}` endpoint
+3. Click "Try it out"
+4. Enter the TODO ID in the `id` parameter
+5. Click "Execute"
 
 #### Update a TODO
-```bash
-# Create update data file
-echo '{"title":"Updated API Documentation","description":"Updated comprehensive API docs","priority":2,"status":1,"dueDate":"2025-12-31T23:59:59Z"}' > update-todo.json
-
-# Update the TODO (replace {id} with actual TODO ID)
-curl -X PUT http://localhost:5235/api/v1/todos/{id} -H "Content-Type: application/json" -d @update-todo.json
+1. Open your browser and go to: http://localhost:5235/swagger
+2. Find the PUT `/api/v1/todos/{id}` endpoint
+3. Click "Try it out"
+4. Enter the TODO ID in the `id` parameter
+5. Enter the updated data in the request body:
+```json
+{
+  "title": "Updated API Documentation",
+  "description": "Updated comprehensive API docs",
+  "priority": 2,
+  "status": 1,
+  "dueDate": "2025-12-31T23:59:59Z"
+}
 ```
+6. Click "Execute"
 
 #### Delete a TODO
-```bash
-# Replace {id} with the actual TODO ID
-curl -X DELETE http://localhost:5235/api/v1/todos/{id}
-```
+1. Open your browser and go to: http://localhost:5235/swagger
+2. Find the DELETE `/api/v1/todos/{id}` endpoint
+3. Click "Try it out"
+4. Enter the TODO ID in the `id` parameter
+5. Click "Execute"
 
 ### Priority Values
 - `0` = Low
