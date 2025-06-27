@@ -86,10 +86,4 @@ Before deploying to production:
 - [ ] Monitoring enabled
 - [ ] Backup strategy in place
 
-## Contact
-
-For security-related questions or reports:
-- **Email**: [your-email@example.com]
-- **PGP Key**: [if you have one]
-
 Thank you for helping keep this project secure! 🔒
