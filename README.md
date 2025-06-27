@@ -257,8 +257,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/YOUR_USERNAME/todo-api-dotnet/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/YOUR_USERNAME/todo-api-dotnet/discussions)
+- **Issues**: [GitHub Issues](https://github.com/RushitSolanki/todo-api-dotnet/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/RushitSolanki/todo-api-dotnet/discussions)
 - **Email**: [Your Email]
 
 ---
