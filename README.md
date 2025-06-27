@@ -41,7 +41,7 @@ A production-ready headless TODO API built with **ASP.NET Core 8**, **PostgreSQL
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/todo-api-dotnet.git
+git clone https://github.com/RushitSolanki/todo-api-dotnet.git
 cd todo-api-dotnet
 ```
 
